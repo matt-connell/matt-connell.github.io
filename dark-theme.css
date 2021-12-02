@@ -65,7 +65,7 @@ div.nav{
   position: -webkit-sticky;
   position: sticky;
   top: 0;
-  background-color: black;
+  background-color: rgb(72,72,72);
   padding: 6px;
   
 }
