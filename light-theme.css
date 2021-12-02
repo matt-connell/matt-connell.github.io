@@ -109,6 +109,7 @@ a{
     padding-top: 1px;
     padding-bottom: 1px;
     font-size: 12;
+    font-weight: bold;
     color: white;
     border-radius: 3px;
     border: none;
@@ -120,6 +121,55 @@ a{
 .python{width: 80%; background-color: #00B2DD;}
 .js{width: 70%; background-color: #00A650;}
   
+.container{
+    background-color: #F2F2F2;
+    margin-left: 20%;
+    margin-right: 20%;
+    border-radius: 3px;
+    border: none;
+}
+
+.bg-html{
+    background-color: #F7931D;
+    font-family: monospace; 
+    padding: 4px;
+    font-size: 14px;
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    justify-content: center;
+    align-items: center;
+}
+  
+.bg-js{
+    background-color: #00B2DD;
+    font-family: monospace; 
+    padding: 4px;
+    font-size: 14px;
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    justify-content: center;
+    align-items: center;
+}
+  
+.bg-bs{
+    background-color: #8BA2AE;
+    font-family: monospace; 
+    padding: 4px;
+    font-size: 14px;
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    justify-content: center;
+    align-items: center;
+}
   
   
+.rounded-pill{border-radius: 2px;}
   
+.center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
