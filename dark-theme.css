@@ -38,8 +38,11 @@ body{
   font: 1.4em Arial, sans-serif;
 }
 
+ul{
+  position: fixed;
 
-.nav{
+}
+nav{
   text-align: center;
   position: -webkit-sticky;
   background-color:rgb(72,72,72);
@@ -49,33 +52,32 @@ body{
   font-size: 18px;
   text-align: center;
 }
-.nav li:hover{
+nav a:hover{
   background-color:rgb(72,72,72);
   color: dodgerblue;
 }
-.nav li{
+nav a{
   background-color:rgb(72,72,72);
   color: white;
 }
 
-.nav{
+nav{
   position: -webkit-sticky;
   position: sticky;
   top: 0;
   background-color: rgb(72,72,72);
   padding: 6px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-
+  
+  
 }
 
+.img{
+  display: block;
+  margin-left: auto;
+  margin-right:auto;
 
-
-
-
-
-
-
-
+}
 
 p{
 
@@ -146,7 +148,6 @@ button:hover{
   border: none;
   transition: all .2s ease-in-out;
 }
-
 
 .container:hover{
   transform: scale(1.05);
@@ -234,4 +235,37 @@ button:hover{
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.wrapper {
+  height: 15vh;
+  /*This part is important for centering*/
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.typing-demo {
+  width: 22ch;
+  animation: typing 2s steps(22), blink .5s step-end infinite alternate;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 3px solid white;
+  color: white;
+  font-family: monospace;
+  font-weight: bold;
+  font-size: 2em;
+  text-decoration: underline;
+}
+
+@keyframes typing {
+  from {
+    width: 0
+  }
+}
+    
+@keyframes blink {
+  50% {
+    border-color: transparent
+  }
 }
