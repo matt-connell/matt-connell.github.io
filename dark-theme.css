@@ -38,11 +38,8 @@ body{
   font: 1.4em Arial, sans-serif;
 }
 
-ul{
-  position: fixed;
 
-}
-nav{
+.nav{
   text-align: center;
   position: -webkit-sticky;
   background-color:rgb(72,72,72);
@@ -52,32 +49,33 @@ nav{
   font-size: 18px;
   text-align: center;
 }
-nav a:hover{
+.nav li:hover{
   background-color:rgb(72,72,72);
   color: dodgerblue;
 }
-nav a{
+.nav li{
   background-color:rgb(72,72,72);
   color: white;
 }
 
-nav{
+.nav{
   position: -webkit-sticky;
   position: sticky;
   top: 0;
   background-color: rgb(72,72,72);
   padding: 6px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  
-  
-}
-
-.img{
-  display: block;
-  margin-left: auto;
-  margin-right:auto;
 
 }
+
+
+
+
+
+
+
+
+
 
 p{
 
@@ -146,7 +144,21 @@ button:hover{
   margin-right: 20%;
   border-radius: 3px;
   border: none;
+  transition: all .2s ease-in-out;
+}
 
+
+.container:hover{
+  transform: scale(1.05);
+}
+
+.container-prog{
+  width: 60%;
+  background-color: rgb(72,72,72);
+  margin-left: 20%;
+  margin-right: 20%;
+  border-radius: 3px;
+  border: none; 
 }
 
 .container-fluid {
