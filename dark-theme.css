@@ -120,6 +120,10 @@ a:hover{
 button {
   padding: 12px 20px;
   box-sizing: border-box;
+  color: white;
+  background-color: rgb(72,72,72);
+  border-color: #ddd;
+  border-radius: 7%;
   text-align: center;
   margin-left: auto;
   margin-right: auto;
