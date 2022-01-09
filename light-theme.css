@@ -209,6 +209,30 @@ button:hover{
     justify-content: center;
     align-items: center;
 }
+ 
+.bg-py{
+    background-color: #00A650;
+    font-family: monospace; 
+    padding: 4px;
+    font-size: 14px;
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .bg-fl{
+    background-color: #d64161;
+    font-family: monospace; 
+    padding: 4px;
+    font-size: 14px;
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    justify-content: center;
+    align-items: center;
+  }
   
   
 .rounded-pill{border-radius: 2px;}
