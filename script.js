@@ -1,3 +1,5 @@
+
+
 function toggleTheme() { 
     // Obtains an array of all <link> 
     // elements. 
@@ -8,10 +10,14 @@ function toggleTheme() {
     // to change the css sheet. 
     if (theme.getAttribute('href') == 'dark-theme.css') { 
         theme.setAttribute('href', 'light-theme.css'); 
-    } else { 
+        document.getElementById('myText').innerHTML = "dark mode"
+    } else if (theme.getAttribute('href') == 'light-theme.css'){ 
         theme.setAttribute('href', 'dark-theme.css'); 
+        document.getElementById('myText').innerHTML = "light mode"
+
     } 
 }
+
 
 
 var topBtn = document.getElementById("top");
