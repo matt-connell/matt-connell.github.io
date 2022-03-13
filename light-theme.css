@@ -14,6 +14,22 @@ h1{
     text-align: center;
 }
 
+h2{
+    color: rgb(72,72,72);
+    font-weight: bolder;
+    font-family: monospace;
+    font-size: 20px;
+    text-align: center; 
+}
+
+.date{
+    color: rgb(72,72,72);
+    font-weight: bolder;
+    font-family: monospace;
+    font-size: 16px;
+    text-align: center;   
+}
+
 
 h3{
     color: rgb(72,72,72);
