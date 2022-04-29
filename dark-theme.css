@@ -271,6 +271,30 @@ button:hover{
 }
 
 
+.bg-java{
+  background-color: #ED1C24;
+  font-family: monospace; 
+  padding: 4px;
+  font-size: 14px;
+  text-align: center;
+  color: white;
+  font-weight: bold;
+  justify-content: center;
+  align-items: center;
+}
+
+.bg-javasw{
+  background-color: 	#f08080;
+  font-family: monospace; 
+  padding: 4px;
+  font-size: 14px;
+  text-align: center;
+  color: white;
+  font-weight: bold;
+  justify-content: center;
+  align-items: center;
+}
+
 .rounded-pill{border-radius: 2px;}
 
 .center{
