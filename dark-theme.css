@@ -62,7 +62,7 @@ ul{
 nav{
   text-align: center;
   position: -webkit-sticky;
-  background-color:rgb(72,72,72);
+  background-color:#212529;
   color: white;
   font-weight: bolder;
   font-family: monospace;
@@ -70,24 +70,26 @@ nav{
   text-align: center;
 }
 nav a:hover{
-  background-color:rgb(72,72,72);
+  background-color:#212529;
   color: dodgerblue;
 }
 nav a{
-  background-color:rgb(72,72,72);
-  color: white;
+  background-color:#212529;
+  color: dodgerblue;
 }
 
 nav{
   position: -webkit-sticky;
   position: sticky;
   top: 0;
-  background-color: rgb(72,72,72);
+  background-color: #212529;
   padding: 6px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   
   
 }
+
+
 
 .img{
   display: block;
@@ -113,7 +115,7 @@ p{
 }
 
 a{
-  color: white;
+  color: dodgerblue;
   font-weight: bolder;
   font-family: monospace;
   font-size: 18px;
@@ -335,3 +337,4 @@ button:hover{
     border-color: transparent
   }
 }
+
