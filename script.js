@@ -21,6 +21,30 @@ function toggleTheme() {
 }
 
 
+function toggleButtonIcon(){
+    var iconClass = document.getElementById('iconSvg');
+    var iconPath = document.getElementById('iconPath');
+    console.log(iconClass.class);
+    if(iconClass.getAttribute('class') == 'bi bi-arrow-down-left'){
+        //this is the open, <- arrow
+        iconClass.class = 'bi bi-arrow-up-right';
+        iconClass.setAttribute('class', 'bi bi-arrow-up-right');
+        iconPath.setAttribute('d', 'M14 2.5a.5.5 0 0 0-.5-.5h-6a.5.5 0 0 0 0 1h4.793L2.146 13.146a.5.5 0 0 0 .708.708L13 3.707V8.5a.5.5 0 0 0 1 0v-6z');
+        iconPath.d = 'M14 2.5a.5.5 0 0 0-.5-.5h-6a.5.5 0 0 0 0 1h4.793L2.146 13.146a.5.5 0 0 0 .708.708L13 3.707V8.5a.5.5 0 0 0 1 0v-6z';
+    
+    } 
+    
+    if (iconClass.getAttribute('class' == 'bi bi-arrow-up-right')){
+
+        iconClass.class = 'bi bi-arrow-down-left';
+        iconClass.setAttribute('class', 'bi bi-arrow-down-left');
+        iconPath.setAttribute('d', 'M2 13.5a.5.5 0 0 0 .5.5h6a.5.5 0 0 0 0-1H3.707L13.854 2.854a.5.5 0 0 0-.708-.708L3 12.293V7.5a.5.5 0 0 0-1 0v6z');
+        iconPath.class = 'M2 13.5a.5.5 0 0 0 .5.5h6a.5.5 0 0 0 0-1H3.707L13.854 2.854a.5.5 0 0 0-.708-.708L3 12.293V7.5a.5.5 0 0 0-1 0v6z';
+
+    }
+}
+
+
 
 var topBtn = document.getElementById("top");
 
@@ -38,18 +62,3 @@ function topFunction(){
     document.body.scrollTop = 0;
     document.documentElement.scrollTop = 0;
 }
-
-document.addEventListener("DOMContentLoaded", function(){
-    window.addEventListener('scroll', function() {
-        if (window.scrollY > 50) {
-          document.getElementById('navbar_top').classList.add('fixed-top');
-          // add padding top to show content behind navbar
-          navbar_height = document.querySelector('.navbar').offsetHeight;
-          document.body.style.paddingTop = navbar_height + 'px';
-        } else {
-          document.getElementById('navbar_top').classList.remove('fixed-top');
-           // remove padding top from body
-          document.body.style.paddingTop = '0';
-        } 
-    });
-  }); 
