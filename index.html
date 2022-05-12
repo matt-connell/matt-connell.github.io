@@ -3,38 +3,60 @@
 	<head class="sticky-top" style="background-color: #212529;">
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
+
 		<link id="theme" rel="stylesheet" type="text/css" href="dark-theme.css" /> 
 		<script rel="script"type="text/javascript" src="script.js"></script>
-		<script src="https://cdn.jsdelivr.net/npm/bootstrSap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
 
-		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
-
+		<!--Bootstrap CSS-->
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+		<!--Bootstap icons-->
+		<link rel=”stylesheet” href=”https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.0/font/bootstrap-icons.css” />
+		<!--Jquery-->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+		<!--Bootstrap JS-->
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 
 		<title>Matthew Connell</title>
 
+		<link rel="icon" href="https://icons.iconarchive.com/icons/paomedia/small-n-flat/1024/terminal-icon.png">
+
+
+
 	</head>
-   
+
+
 	<body class='container-fluid'>
 		
 		<nav id="top" class="navbar navbar-expand-md navbar-dark bg-dark sticky-top">
-			<h1 class = "title">Matthew Connell</h1>
+			<a class="navbar-brand" href="#">Matthew Connell</a>
 			<div class="container-fluid" style="background-color: #212529;">
-				<button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+				<button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarHeaderCollapse" aria-expanded="false" aria-label="Toggle navigation">
 					<span class="navbar-toggler-icon"></span>
 				</button>
-				<div class="collapse navbar-collapse" id="navBarCollapse">
-					<div class="navbar-nav">
-						<a href="#project1" class="links nav-item nav-link text-light">projects</a>
-						<a href="Connell_Matthew_ResumeS2022.pdf" class="links nav-item nav-link text-light">resume</a>
-						<a href="#contacts" class="links nav-item nav-link text-light">contacts</a>
-		
-						<a onclick="toggleTheme()" class="links Snav-item nav-link text-light"tabindex="-1" id="myText" style="text-decoration: underline;">   light mode   </a>
-					</div>
+
+				<div class="collapse navbar-collapse" id="navBarNav">
+					
+						<ul class="navbar-nav">
+							<li class="nav-item">
+								<a href="#project1" class="nav-link text-light">projects</a>
+							</li>
+							<li class="nav-item">
+								<a href="Connell_Matthew_ResumeS2022.pdf" class="nav-link active text-light">resume</a>
+							</li>
+							<li class="nav-item">
+								<a href="#contacts" class="nav-link text-light">contacts</a>
+							</li>
+							<li class="nav-item">
+								<a onclick="toggleTheme()" class="nav-link text-light"tabindex="-1" id="myText" style="text-decoration: underline;">   light mode   </a>
+							</li>
+							</ul>
 
 				</div>
 			</div>
 
 		</nav>
+	
+
 
 
 		<br>
@@ -45,7 +67,7 @@
 		</div>
 		
 		<br>
-
+	
 		<img src="coding.webp"class = "img" width="500" height="250">
 
 		<br>
@@ -91,8 +113,13 @@
 		<div class="container" id="project1" style="  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);">
 			<h1>Personal Website</h1>
 			<p>the website you are viewing right now. it displays my portfolio and things i find interesting!!</p>
-			<div class="d-flex justify-content-center align-items-center" style="height:100px;">
-				<a href="https://github.com/matt-connell/matt-connell.github.io"><button id="top">GitHub</button></a>
+
+			<div class="d-flex justify-content-center align-items-center" style="height:75px;">
+				<a class="github" href="https://github.com/matt-connell/matt-connell.github.io">
+					<svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-github" viewBox="0 0 16 16">
+						<path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"/>
+					</svg>
+				</a>
 			</div>
 			<br>
 			<div class="center">
@@ -108,9 +135,13 @@
 		<div class="container"  id="project2" style="  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);">
 			<h1>GPA Calculator</h1>
 			<p>Performs basic calculations such as calculating averages</p>
-			
-			<div class="d-flex justify-content-center align-items-center" style="height:100px;">
-				<a href="https://github.com/matt-connell/GPA-Calculator"><button id="top">GitHub</button></a>
+
+			<div class="d-flex justify-content-center align-items-center" style="height:75px;">
+				<a class="github" href="https://github.com/matt-connell/GPA-Calculator">
+					<svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-github" viewBox="0 0 16 16">
+						<path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"/>
+					</svg>
+				</a>
 			</div>
 			<br>
 			<div class="center">
@@ -127,8 +158,13 @@
 		<div class="container"  id="project3" style="  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);">
 			<h1>Currency Conversion</h1>
 			<p>Performs basic conversions between different currencies</p>
-			<div class="d-flex justify-content-center align-items-center" style="height:100px;">
-				<a href="https://github.com/matt-connell/Currency-Conversion"><button id="top">GitHub</button></a>
+
+			<div class="d-flex justify-content-center align-items-center" style="height:75px;">
+				<a class="github" href="https://github.com/matt-connell/Currency-Conversion">
+					<svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-github" viewBox="0 0 16 16">
+						<path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"/>
+					</svg>
+				</a>
 			</div>
 			<br>
 			<div class="center">
@@ -146,8 +182,13 @@
 			<h1>Directed Graph Builder</h1>
 			<p>This is a JavaSwing based application that allows a user to draw a directed graph.</p>
 			<p>This app also allows for users to add nodes/edges, deletion of nodes/edges, ability to move nodes/edges, and to save/load graphs from a text-file.</p>
-			<div class="d-flex justify-content-center align-items-center" style="height:100px;">
-				<a href="https://github.com/matt-connell/Directed-Graph-Builder"><button id="top">GitHub</button></a>
+
+			<div class="d-flex justify-content-center align-items-center" style="height:75px;">
+				<a class="github" href="https://github.com/matt-connell/Directed-Graph-Builder">
+					<svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-github" viewBox="0 0 16 16">
+						<path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"/>
+					</svg>
+				</a>
 			</div>
 			<br>
 			<div class="center">
@@ -162,11 +203,15 @@
 		<div class="container"  id="project5" style="  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);">
 			<h1>Code Grader</h1>
 			<p>this is a Java Server Client application that accepts a C program from Client Side and tests against given test cases to create a submission report.</p>
-			<br>
-			<div class="d-flex justify-content-center align-items-center" style="height:100px;">
-				<a href="https://github.com/matt-connell/Code-Grader"><button id="top">GitHub</button></a>
+			<div class="d-flex justify-content-center align-items-center" style="height:75px;">
+				<a class="github" href="https://github.com/matt-connell/Code-Grader">
+					<svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-github" viewBox="0 0 16 16">
+						<path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"/>
+					</svg>
+				</a>
 			</div>
 			<br>
+
 			<div class="center">
 				<span class="badge rounded-pill bg-java"> Java </span>&nbsp;
 				<span class="badge rounded-pill bg-javasw"> JavaSwing </span>&nbsp;
@@ -209,18 +254,44 @@
 
 
 		<div class="d-flex justify-content-center align-items-center" style="height:100px;">
-			<button id="top" onclick="topFunction()" style="font-weight: bold; border-width: 10%;">Back to Top</button>
+			<a class="topBtn" id="top" onclick="topFunction()" style="font-weight: bold;">
+				<svg xmlns="http://www.w3.org/2000/svg" width="75" height="75" fill="currentColor" class="bi bi-chevron-double-up" viewBox="0 0 16 16">
+					<path fill-rule="evenodd" d="M7.646 2.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1-.708.708L8 3.707 2.354 9.354a.5.5 0 1 1-.708-.708l6-6z"/>
+					<path fill-rule="evenodd" d="M7.646 6.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1-.708.708L8 7.707l-5.646 5.647a.5.5 0 0 1-.708-.708l6-6z"/>
+				  </svg>
+			</a>
 		</div>
 		<br><br>
+
+
+
 		<div class="container-fluid" style="text-align: center;" id="contacts">
 			<h1>contact me</h1>
 
-			<a href="mailto:matt.connell02@gmail.com">Email</a>
-			<a href="https://www.linkedin.com/in/matthew-connell-a31922184/">LinkedIn</a>
-			<a href="https://github.com/matt-connell">GitHub</a>
-			<a href="Connell_Matthew_ResumeS2022.pdf">Resume</a>
+			<a class="links" href="mailto:matt.connell02@gmail.com">
+				<svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="currentColor" class="bi bi-envelope-check-fill" viewBox="0 0 16 16">
+					<path d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414.05 3.555ZM0 4.697v7.104l5.803-3.558L0 4.697ZM6.761 8.83l-6.57 4.026A2 2 0 0 0 2 14h6.256A4.493 4.493 0 0 1 8 12.5a4.49 4.49 0 0 1 1.606-3.446l-.367-.225L8 9.586l-1.239-.757ZM16 4.697v4.974A4.491 4.491 0 0 0 12.5 8a4.49 4.49 0 0 0-1.965.45l-.338-.207L16 4.697Z"/>
+					<path d="M16 12.5a3.5 3.5 0 1 1-7 0 3.5 3.5 0 0 1 7 0Zm-1.993-1.679a.5.5 0 0 0-.686.172l-1.17 1.95-.547-.547a.5.5 0 0 0-.708.708l.774.773a.75.75 0 0 0 1.174-.144l1.335-2.226a.5.5 0 0 0-.172-.686Z"/>
+				</svg>
+			</a>
+			<a class="links" href="https://www.linkedin.com/in/matthew-connell-a31922184/">
+				<svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="currentColor" class="bi bi-linkedin" viewBox="0 0 16 16">
+					<path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z"/>
+				</svg>
+			</a>
+			<a class="links" href="https://github.com/matt-connell">
+				<svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="currentColor" class="bi bi-github" viewBox="0 0 16 16">
+					<path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"/>
+				</svg>
+			</a>
+			<a class="links" href="Connell_Matthew_ResumeS2022.pdf">
+				<svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="currentColor" class="bi bi-file-earmark-pdf" viewBox="0 0 16 16">
+					<path d="M14 14V4.5L9.5 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2zM9.5 3A1.5 1.5 0 0 0 11 4.5h2V14a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1h5.5v2z"/>
+					<path d="M4.603 14.087a.81.81 0 0 1-.438-.42c-.195-.388-.13-.776.08-1.102.198-.307.526-.568.897-.787a7.68 7.68 0 0 1 1.482-.645 19.697 19.697 0 0 0 1.062-2.227 7.269 7.269 0 0 1-.43-1.295c-.086-.4-.119-.796-.046-1.136.075-.354.274-.672.65-.823.192-.077.4-.12.602-.077a.7.7 0 0 1 .477.365c.088.164.12.356.127.538.007.188-.012.396-.047.614-.084.51-.27 1.134-.52 1.794a10.954 10.954 0 0 0 .98 1.686 5.753 5.753 0 0 1 1.334.05c.364.066.734.195.96.465.12.144.193.32.2.518.007.192-.047.382-.138.563a1.04 1.04 0 0 1-.354.416.856.856 0 0 1-.51.138c-.331-.014-.654-.196-.933-.417a5.712 5.712 0 0 1-.911-.95 11.651 11.651 0 0 0-1.997.406 11.307 11.307 0 0 1-1.02 1.51c-.292.35-.609.656-.927.787a.793.793 0 0 1-.58.029zm1.379-1.901c-.166.076-.32.156-.459.238-.328.194-.541.383-.647.547-.094.145-.096.25-.04.361.01.022.02.036.026.044a.266.266 0 0 0 .035-.012c.137-.056.355-.235.635-.572a8.18 8.18 0 0 0 .45-.606zm1.64-1.33a12.71 12.71 0 0 1 1.01-.193 11.744 11.744 0 0 1-.51-.858 20.801 20.801 0 0 1-.5 1.05zm2.446.45c.15.163.296.3.435.41.24.19.407.253.498.256a.107.107 0 0 0 .07-.015.307.307 0 0 0 .094-.125.436.436 0 0 0 .059-.2.095.095 0 0 0-.026-.063c-.052-.062-.2-.152-.518-.209a3.876 3.876 0 0 0-.612-.053zM8.078 7.8a6.7 6.7 0 0 0 .2-.828c.031-.188.043-.343.038-.465a.613.613 0 0 0-.032-.198.517.517 0 0 0-.145.04c-.087.035-.158.106-.196.283-.04.192-.03.469.046.822.024.111.054.227.09.346z"/>
+				  </svg>
+			</a>
 
-			<br>
+			<br><br>
 			<p>© Matthew Connell 2022</p>
 
 			<br>
