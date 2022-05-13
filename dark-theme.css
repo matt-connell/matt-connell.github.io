@@ -60,7 +60,7 @@ nav{
 }
 nav a:hover{
   background-color:#212529;
-  color: dodgerblue;
+  color: dodgerblue !important;
 }
 nav a{
   background-color:#212529;
@@ -80,7 +80,7 @@ nav{
 
 
 
-.img{
+.image{
   display: block;
   margin-left: auto;
   margin-right:auto;
