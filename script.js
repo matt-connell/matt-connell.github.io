@@ -24,23 +24,26 @@ function toggleTheme() {
 function toggleButtonIcon(){
     var iconClass = document.getElementById('iconSvg');
     var iconPath = document.getElementById('iconPath');
-    console.log(iconClass.class);
+
+    let classI = 'hey';
+    let dIcon = 'sup';
+
     if(iconClass.getAttribute('class') == 'bi bi-arrow-down-left'){
         //this is the open, <- arrow
-        iconClass.class = 'bi bi-arrow-up-right';
-        iconClass.setAttribute('class', 'bi bi-arrow-up-right');
-        iconPath.setAttribute('d', 'M14 2.5a.5.5 0 0 0-.5-.5h-6a.5.5 0 0 0 0 1h4.793L2.146 13.146a.5.5 0 0 0 .708.708L13 3.707V8.5a.5.5 0 0 0 1 0v-6z');
-        iconPath.d = 'M14 2.5a.5.5 0 0 0-.5-.5h-6a.5.5 0 0 0 0 1h4.793L2.146 13.146a.5.5 0 0 0 .708.708L13 3.707V8.5a.5.5 0 0 0 1 0v-6z';
-    
+        classI = 'bi bi-arrow-up-right';
+        dIcon = 'M14 2.5a.5.5 0 0 0-.5-.5h-6a.5.5 0 0 0 0 1h4.793L2.146 13.146a.5.5 0 0 0 .708.708L13 3.707V8.5a.5.5 0 0 0 1 0v-6z';
+        iconClass.setAttribute('class', classI);
+        iconPath.setAttribute('d', dIcon);
+        console.log(classI);
     } 
     
     if (iconClass.getAttribute('class' == 'bi bi-arrow-up-right')){
 
-        iconClass.class = 'bi bi-arrow-down-left';
-        iconClass.setAttribute('class', 'bi bi-arrow-down-left');
-        iconPath.setAttribute('d', 'M2 13.5a.5.5 0 0 0 .5.5h6a.5.5 0 0 0 0-1H3.707L13.854 2.854a.5.5 0 0 0-.708-.708L3 12.293V7.5a.5.5 0 0 0-1 0v6z');
-        iconPath.d = 'M2 13.5a.5.5 0 0 0 .5.5h6a.5.5 0 0 0 0-1H3.707L13.854 2.854a.5.5 0 0 0-.708-.708L3 12.293V7.5a.5.5 0 0 0-1 0v6z';
-
+        classI = 'bi bi-arrow-down-left';
+        dIcon = 'M2 13.5a.5.5 0 0 0 .5.5h6a.5.5 0 0 0 0-1H3.707L13.854 2.854a.5.5 0 0 0-.708-.708L3 12.293V7.5a.5.5 0 0 0-1 0v6z';
+        iconClass.setAttribute('class', classI);
+        iconPath.setAttribute('d', dIcon);
+        console.log(classI);
     }
 }
 
