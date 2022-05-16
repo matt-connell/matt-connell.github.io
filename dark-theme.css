@@ -32,7 +32,7 @@ h3{
 
 body{
   text-align: left;
-  background-color:rgb(72,72,72);
+  background-color:#262626;
   font: 1.4em Arial, sans-serif;
 }
 
@@ -109,17 +109,17 @@ a{
   font-family: monospace;
   font-size: 18px;
   text-align: center;
-  background-color:rgb(72,72,72);
+  background-color:#262626;
   text-decoration: none;
 }
 
 .links{
-  color: #73c2fb;
+  color: dodgerblue;
   font-weight: bolder;
   font-family: monospace;
   font-size: 18px;
   text-align: center;
-  background-color:rgb(72,72,72);
+  background-color:#262626;
   text-decoration: none;
 }
 
@@ -129,12 +129,12 @@ a{
   font-family: monospace;
   font-size: 18px;
   text-align: center;
-  background-color:rgb(72,72,72);
+  background-color:#262626;
   text-decoration: none;
 }
 
 a:hover{
-  background-color: rgb(72,72,72);
+  background-color: #262626;
   color: dodgerblue;
   text-decoration: none;
 }
@@ -155,7 +155,7 @@ a:hover{
 button {
   padding: 12px 20px;
   color: white;
-  background-color: rgb(72,72,72);
+  background-color: #262626;
   border-radius: 50%;
   -moz-border-radius:50%;
   -webkit-border-radius:50%;
@@ -190,7 +190,7 @@ button:hover{
 
 .container-prog{
   width: 60%;
-  background-color: rgb(72,72,72);
+  background-color: #262626;
   margin-left: 20%;
   margin-right: 20%;
   border-radius: 3px;
@@ -198,7 +198,7 @@ button:hover{
 }
 
 .container-fluid {
-  background-color: rgb(72,72,72);
+  background-color: #262626;
 }
 
 .skills {
@@ -219,7 +219,7 @@ button:hover{
 .js{width: 70%; background-color: #00B2DD;}
 
 .container{
-  background-color: rgb(72,72,72);
+  background-color: #262626;
   margin-left: 20%;
   margin-right: 20%;
   border-radius: 3px;
