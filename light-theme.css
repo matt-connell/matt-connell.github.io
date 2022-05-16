@@ -58,8 +58,8 @@ body{
 nav{
     text-align: center;
    
-    background-color: #212529;
-    color: #F2F2F2;
+    background-color: #FBFBFB !important;
+    color: #262626 !important;
     font-weight: bolder;
     font-family: monospace;
     font-size: 18px;

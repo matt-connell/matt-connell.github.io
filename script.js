@@ -5,18 +5,23 @@ function toggleTheme() {
     // elements. 
     // Select your element using indexing. 
     var theme = document.getElementsByTagName('link')[0]; 
-
     // Change the value of href attribute  
     // to change the css sheet. 
     if (theme.getAttribute('href') == 'dark-theme.css') { 
         theme.setAttribute('href', 'light-theme.css'); 
-        theme.setAttribute('style', 'background-color=#F2F2F2');
         document.getElementById('myText').innerHTML = "dark mode"
+
+        //var navClass = document.getElementById('top').className = "navbar navbar-expand-md navbar-light bg-light sticky-top text-light";
+        //var navUl = document.getElementById('navUl').className = "nav navbar-nav navbar-right bg-light";
+        //var navLi = document.getElementById('navLi').className = "nav-item bg-light";
+
     } else if (theme.getAttribute('href') == 'light-theme.css'){ 
         theme.setAttribute('href', 'dark-theme.css'); 
-        theme.setAttribute('style', 'background-color=rgb(72,72,72)');
         document.getElementById('myText').innerHTML = "light mode"
-
+        //var navClass = document.getElementById('top').className = "navbar navbar-expand-md navbar-dark bg-dark sticky-top text-dark";
+        //var navUl = document.getElementById('navUl').className = "nav navbar-nav navbar-right bg-dark";
+        //var navLi = document.getElementById('navLi').className = "nav-item bg-dark";
+        
     } 
 }
 
