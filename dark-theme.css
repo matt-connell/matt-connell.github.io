@@ -55,7 +55,7 @@ nav{
   color: white;
   font-weight: bolder;
   font-family: monospace;
-  font-size: 18px;
+  font-size: 16px !important;
   text-align: center;
 }
 nav a:hover{
@@ -212,9 +212,9 @@ button:hover{
   border: none;
 }
 
-.html{width: 90%; background-color: #F7931D;}
-.java{width: 75%; background-color: #ED1C24;}
-.c{width: 60%; background-color: #8BA2AE;}
+.html{width: 85%; background-color: #F7931D;}
+.java{width: 95%; background-color: #ED1C24;}
+.c{width: 70%; background-color: #8BA2AE;}
 .python{width: 80%; background-color: #00A650;}
 .js{width: 70%; background-color: #00B2DD;}
 
