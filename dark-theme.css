@@ -212,12 +212,12 @@ button:hover{
   border: none;
 }
 
-.html{width: 85%; background-color: #F7931D;}
-.java{width: 95%; background-color: #ED1C24;}
-.c{width: 70%; background-color: #8BA2AE;}
-.python{width: 80%; background-color: #00A650;}
-.js{width: 70%; background-color: #00B2DD;}
-.sql{width: 85%; background-color: #d64161;}
+.html{width: 100%; background-color: #F7931D;}
+.java{width: 80%; background-color: #ED1C24;}
+.c{width: 60%; background-color: #8BA2AE;}
+.python{width: 60%; background-color: #00B2DD;}
+.js{width: 80%; background-color: #00A650;}
+.sql{width: 100%; background-color: #d64161;}
 
 .container{
   background-color: #262626;
@@ -304,7 +304,7 @@ button:hover{
 .bg-javasw{
   background-color: 	#f08080;
   font-family: monospace; 
-  padding: 4px;
+  padding: 12px;
   font-size: 14px;
   text-align: center;
   color: white;
